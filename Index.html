@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prattaykun's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4ba47ef631.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Assets/logo.png" class="logo">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                <ul id="sideMenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="toggleMenu()"></i>
+                </ul>
+                
+            </nav>
+            
+            <div class="header-text">
+                <h1>
+                    <span class="line1">Hi, I'm</span><br>
+                    <span class="line2"><span class="red">Prattay</span><br class="formobile show"> Roy Chowdhury</span>
+                </h1>
+                <p>Web Developer</p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/user.png" class="user" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Hi, I'm Prattay Roy Chowdhury. I'm currently a 2nd year BTech student in ECE at RCCIIT,Kolkata. I have been working in this field for 0.5 years. I have a good knowledge of HTML, CSS, JavaScript, React, Node.js, and MongoDB. I have also worked on some projects. I'm a hardworking person and I love to learn new things.</p>
+                    <a href="Assets/Resume 2024 Oct.pdf" download>Download CV</a>
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="orange">Frontend Developpper</span><br>Have built intermediate level frontends using ReactJS for various projects</li>
+                            <li><span class="orange">Google Firebase</span><br>Have worked with Google Firebase for authentication and database</li>
+                            <li><span class="orange">Video Editor</span><br>Have been editing various videos in advance level in various video editors like Wondershare Filmora & Capcut</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span class="orange">Intern</span><br>*None*</li>
+                            <li><span class="orange">Freelancer</span><br>*None*</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span class="orange">BTech in ECE</span><br>RCCIIT, Kolkata <br>YGPA: <span class="red">7.5</span>(2023-24)</li>
+                            <li><span class="orange">Higher Secondary</span><br>Belur High School, Howrah <br>Percentage: <span class="red">84.6%</span>(2022)</li>
+                            <li><span class="orange">Secondary</span><br>Uttarpara Children's Own Home, Hooghly <br>Percentage: <span class="red">86.43%</span>(2020)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I can build a responsive website for you using HTML, CSS, and JavaScript.</p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div class="service">
+                    <i class="fa-brands fa-react"></i>         
+                    <h2>React Development</h2>
+                    <p>I can build a frontend for your website using ReactJS.</p>
+                    <a href="#">Learn more..</a>
+                </div>
+                <div class="service">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <h2>Video Editing</h2>
+                    <p>I can edit your videos using Wondershare Filmora and Capcut.</p>
+                    <a href="#">Learn more..</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="Assets/project1.png" class="project1">
+                    <h2>Ayush-Registration-Portal Prototype based on Firebase</h2>
+                    <p>A registration portal for registering and monitoring startup registrations under Ayush Ministry totally based on Google Firebase services and react.js, made as a prototype for our SIH 2024 Idea submission</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square" onclick="window.open('https://ayush-prototype-final.vercel.app', '_blank')"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square" onclick="window.open('https://youtu.be/wKuTvsYWSR8', '_blank')"></i>
+                </div>
+                <div class="project">
+                    <img src="Assets/logo.png" class="project2">
+                    <h2> Personal Portfolio Website</h2>
+                    <p>This is a custom-built portfolio website showcasing my skills, projects, and professional journey, crafted using only HTML, CSS, and JavaScript. Designed with a focus on clean aesthetics and responsive design, the website adapts seamlessly across devices, providing an engaging user experience.</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square" onclick="window.open('https://prattaykun.github.io/Portfolio/', '_blank')"></i>
+                </div>
+                <div class="project">
+                    <i class="fa-brands fa-youtube" onclick="window.open('https://www.youtube.com/watch?v=elxSxRW7eH4', '_blank')"></i>
+                    <h2>Edited Sample</h2>
+                    <p>One of my Old edited video, edited back in 2019! :')</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square" onclick="window.open('https://www.youtube.com/watch?v=elxSxRW7eH4', '_blank')"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div id="contact">
+           <div class="container">
+             <div class="row">
+                  <div class="contact-left">
+                      <h1 class="sub-title">Contact Me</h1>
+                      <p><a href="mailto:prattaystudent@gmail.com"><i class="fa-regular fa-paper-plane"></i>  prattaystudent@gmail.com</a> <br> <br></p>
+                      <p><a href="tel:+919231953110"><i class="fa-solid fa-square-phone"></i>  +91 9231953110</a></p>
+                       <div class="social-icons">
+                            <a href="https://www.facebook.com/prattaykun"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/prattaykun/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/prattayroychowdhury/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Prattaykun"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://wa.me/9231953110"><i class="fa-brands fa-whatsapp"></i></a>
+                       </div>
+                  </div>
+                    <div class="contact-right">
+                      <form name="submit-to-google-sheet">
+                         <input type="text" name="Name" placeholder="Full Name" required>
+                         <input type="email" name="Email" placeholder="Your Email" required>
+                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                         <button type="submit">Send Message</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+             </div>
+                    
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2024 Prattaykun. All rights reserved.</p>
+            </div>
+        </div>
+    <script>
+        function opentab(tabName){
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-contents");
+            for(i=0; i<tabcontent.length; i++){
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab-links");
+            for(i=0; i<tablinks.length; i++){
+                tablinks[i].className = tablinks[i].className.replace(" active-link", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active-link";
+        }
+    </script>
+    <script>
+        function toggleMenu() {
+            const sideMenu = document.getElementById("sideMenu");
+            if (sideMenu.style.display === "block") {
+                sideMenu.style.display = "none";
+            } else {
+                sideMenu.style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfr4f_Uqyfxxmzon0aah7eIAAnmji9k5idRvsP-ZlEETbRmUHi3Ec1LqUP7InBFL_F/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "The message has been submitted.Thanks for your time!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+                })
+            
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+   
+</body>
+</html>
