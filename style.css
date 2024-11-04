@@ -474,6 +474,9 @@ nav ul li a:hover::after {
         top: 20px;
         right: 20px;
     }
+    .header-text h1 {
+        font-size: 24px;
+    }
     .header-text h1 .line2 {
         animation: typing-line2 2.5s steps(22, end) 1.6s forwards, cursor-appear 0.1s 1.6s forwards, blink .75s step-end infinite 4.1s;
     }
