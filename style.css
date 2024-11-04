@@ -441,6 +441,9 @@ nav ul li a:hover::after {
         right: 20px;
         z-index: 3;
     }
+    .show {
+        display: initial;
+    }
 
     /* Show side menu as overlay */
     #sideMenu {
