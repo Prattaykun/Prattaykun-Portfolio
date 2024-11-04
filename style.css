@@ -523,6 +523,12 @@ nav ul li a:hover::after {
     .contact-right button {
         padding: 10px 20px;
     }
+    .row {
+        display: block;
+        align-items: center;
+        gap: 20px;
+    }
+    
 }
 #msg {
      /* Initially hidden */
