@@ -481,6 +481,11 @@ nav ul li a:hover::after {
     .header-text h1 .line2 {
         animation: typing-line2 2.5s steps(22, end) 1.6s forwards, cursor-appear 0.1s 1.6s forwards, blink .75s step-end infinite 4.1s;
     }
+    #about {
+        padding: 2px 0;
+        font-family: 'Fira Code', monospace;
+        color: #ffffff;
+    }
     .about-col-1 {
         display: none;
     }
