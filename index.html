@@ -238,6 +238,30 @@
             window.addEventListener('load', loadHoverSound);
 
       </script>
-   
+     <script>
+        // Attempt to autoplay typing sound on page load without user interaction
+        let typingAudio;
+        
+        function loadTypingSound() {
+            typingAudio = new Audio('Assets/typing.mp3');
+            typingAudio.volume = 0.5; // Lower volume for autoplay attempt
+            typingAudio.play().catch(error => {
+                // Autoplay failed, mute sound and play it once the user interacts
+                typingAudio.muted = true;
+                document.addEventListener('click', unmuteAudioOnInteraction, { once: true });
+            });
+        }
+        
+        function unmuteAudioOnInteraction() {
+            typingAudio.muted = false;
+            typingAudio.play();
+        }
+        
+        // Load the typing sound on page load
+        window.addEventListener('load', loadTypingSound);
+        </script>
+        
+    
+      
 </body>
 </html>
