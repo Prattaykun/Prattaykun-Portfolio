@@ -207,6 +207,19 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script>
+                   // Function to play sound on hover
+            function playHoverSound() {
+            const audio = new Audio('Assets/mouse-hover.mp3');
+             audio.play();
+               }
+
+            // Add event listeners to all <a> and <button> tags
+            document.querySelectorAll('a, button').forEach(element => {
+    element.addEventListener('mouseenter', playHoverSound);
+});
+
+      </script>
    
 </body>
 </html>
